@@ -29,10 +29,10 @@ const Navbar = async () => {
                 </span>
               </Link>
               
-              <form action="{async () =>{
+              <form action={async () =>{
                 'use server';
                 await signOut({ callbackUrl: '/' });
-                } }">
+                } }>
                   <button type='submit'>Logout</button>
               </form>
 
