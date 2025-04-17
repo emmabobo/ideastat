@@ -1,10 +1,9 @@
 "use client";
-// Removed incorrect import as the component is defined in this file
 
-import { signIn } from "next-auth/react";
+import { signIn } from "@/auth";
 import { Button } from "@/components/ui/button";
 
-const loginButton = () => {
+const LoginButton = () => {
   return (
     <Button
       onClick={() => signIn("github", { callbackUrl: "/" })}
@@ -15,5 +14,5 @@ const loginButton = () => {
   );
 };
 
-export default loginButton;
+export default LoginButton;
 

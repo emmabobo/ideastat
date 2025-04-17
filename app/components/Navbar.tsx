@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {auth , signOut ,signIn}  from "@/auth"; 
-import loginButton from '@/ui/loginButton'
+import {auth , signOut}  from "@/auth"; 
+import LoginButton from '@/components/ui/LoginButton';
 
 
 const Navbar = async () => {
@@ -44,9 +44,9 @@ const Navbar = async () => {
             
             ):(
               
-              <LoginButton />
-
-              
+              <>
+                <LoginButton />
+              </>
             )
           }
            
